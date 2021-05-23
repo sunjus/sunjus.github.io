@@ -43,6 +43,24 @@ const GlobalStyled = createGlobalStyle`
         font-size: inherit;
         font-size: 1rem;
     }
+
+    h1{
+        font-size: 4rem;
+        color: var(--white-color);
+        span{
+            font-size: 4rem;
+            @media screen and (max-width: 502px){
+                font-size: 3rem
+            }
+        }
+        @media screen and (max-width: 502px){
+            font-size: 3rem
+        }
+    }
+
+    span{
+        color: var(--font-dark-color);
+    }
 `;
 
 export default GlobalStyled;
