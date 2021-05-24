@@ -23,8 +23,8 @@ function HomePage() {
             <i class="fab fa-js-square"></i>Typescript <span> </span>
           </p>
           <p>
-            <i class="fab fa-node"></i> Nodejs
-            <i class="fab fa-node"></i> Express
+            <i class="fab fa-node"></i> Nodejs <span> </span>
+            <i class="fab fa-node"></i> Express <span> </span>
           </p>
           <i class="fas fa-database"></i>MongoDB
         </div>
@@ -37,10 +37,11 @@ const HomePageStyled = styled.header`
   width: 100%;
   height: 100vh;
   position: relative;
+  /*background-color: var(--primary-color-light);*/
 
   .typography {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
