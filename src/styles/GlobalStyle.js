@@ -2,22 +2,22 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyled = createGlobalStyle`
 :root{
-    --primary-color: #f774c5;
-    --primary-color-light: #ecb6d7;
-    --secondary-color: #ff7675;
-    --background-dark-color: #faf7f7;
+    --primary-color: #f08c89;
+    --primary-color-light: bisque;
+    --secondary-color: yellow;
+    --background-dark-color: #79b4b4;
     --background-dark-grey: #e4e4e4;
-    --border-color: #cbced8;
-    --background-light-color: #faf7f7;
-    --background-light-color-2: #ecb6d7;
+    --border-color:  bisque;
+    --background-light-color: white;
+    --background-light-color-2: #79b4b4;
     --white-color: #151515;
-    --font-light-color: #313131;
-    --font-dark-color: #313131;
-    --font-dark-color-2: #151515;
-    --sidebar-dark-color: #E4E4E4;
-    --scrollbar-bg-color: #383838;
-    --scrollbar-thump-color: #6b6b6b;
-    --scrollbar-track-color: #383838;
+    --font-light-color: black;
+    --font-dark-color: grey;
+    --font-dark-color-2: red;
+    --sidebar-dark-color: #79b4b4;
+    --scrollbar-bg-color: #f08c89;
+    --scrollbar-thump-color: red;
+    --scrollbar-track-color: #79b4b4;
 }
 
     * {
@@ -41,7 +41,7 @@ const GlobalStyled = createGlobalStyle`
         font-family: inherit;
         color: inherit;
         font-size: inherit;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     h1{
@@ -58,8 +58,45 @@ const GlobalStyled = createGlobalStyle`
         }
     }
 
+    h2{
+        font-size: 2.1rem;
+        color: var(--white-color);
+        span{
+            font-size: 2.1rem;
+            @media screen and (max-width: 502px){
+                font-size: 1.3rem
+            }
+        }
+        @media screen and (max-width: 502px){
+            font-size: 1.3rem
+        }
+    }
+
     span{
         color: var(--font-dark-color);
+    }
+
+    //Nav Toggler
+    .ham-burger-menu{
+        position: absolute;
+        right: 5%;
+        top: 3%; 
+        display: none;
+        z-index: 15;
+        svg{
+            font-size: 2rem;
+        }
+      }
+      .nav-toggle{
+          transform: translateX(0);
+          z-index: 20;
+          background-color: #79b4b4;
+        
+      }
+    @media screen and (max-width:1200px){
+      .ham-burger-menu{
+          display: block;
+      }
     }
 `;
 

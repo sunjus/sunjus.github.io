@@ -5,7 +5,6 @@ import avatar from "../images/avatar.jpg";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GithubIcon from "@material-ui/icons/GitHub";
 import YouTubeIcon from "@material-ui/icons/YouTube";
-import BackupIcon from "@material-ui/icons/Backup";
 
 const Navigation = () => {
   return (
@@ -20,13 +19,13 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/portfolios" activeClassName="active-class" exact>
-            Portfolios
+          <NavLink to="/portfolio" activeClassName="active-class" exact>
+            Portfolio
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/blogs" activeClassName="active-class" exact>
-            Blogs
+          <NavLink to="/blog" activeClassName="active-class" exact>
+            Blog
           </NavLink>
         </li>
         <li className="nav-item">
@@ -45,9 +44,6 @@ const Navigation = () => {
           </a>
           <a href="https://youtube.com" className="icon i-youtube">
             <YouTubeIcon />
-          </a>
-          <a href="https://BackupIcon.com/" className="icon i-backup">
-            <BackupIcon />
           </a>
         </div>
         <p>
@@ -104,9 +100,9 @@ const NavigationStyled = styled.nav`
           left: 0;
           width: 0;
           height: 50%;
-          background-color: var(--primary-color);
+          background-color: var(--primary-color-light);
           transition: All 0.4s cubic-bezier(1, -0.2, 0.25, 0.95);
-          opacity: 0.21;
+          opacity: 0.8;
           z-index: -1;
         }
       }
@@ -138,7 +134,7 @@ const NavigationStyled = styled.nav`
           margin-right: 1rem;
         }
         svg {
-          margin: 0.5rem;
+          margin: 0.7rem;
         }
       }
       .i-youtube {

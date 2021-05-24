@@ -2,20 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import Navigation from "./Navigation";
 
-const Sidebar = () => {
+const Sidebar = ({ navToggle }) => {
   return (
-    <SidebarStyled>
+    <SidebarStyled className={`${navToggle ? "nav-toggle" : ""}`}>
       <Navigation />
     </SidebarStyled>
   );
 };
 
 const SidebarStyled = styled.div`
-  width: 25rem;
+  width: 16.3rem;
   position: fixed;
   height: 100vh;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
+  background-color: var(--sidebar-dark-color);
 
   @media screen and (max-width: 1200px) {
     transform: translateX(-100%);

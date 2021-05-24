@@ -1,25 +1,38 @@
-import Sidebar from "./Components/Sidebar";
+import { useState } from "react";
 import styled from "styled-components";
+
+import Sidebar from "./Components/Sidebar";
 import HomePage from "./Pages/HomePage";
-import PortfoliosPage from "./Pages/PortfoliosPage";
-import BlogsPage from "./Pages/BlogsPage";
+import PortfolioPage from "./Pages/PortfolioPage";
+import BlogPage from "./Pages/BlogPage";
 import ContactPage from "./Pages/ContactPage";
 import { Route, Switch as Switching } from "react-router";
+import MenuIcon from "@material-ui/icons/Menu";
+import { IconButton } from "@material-ui/core";
 
 function App() {
+  const [navToggle, setNavToggle] = useState(false);
+
   return (
     <div className="App">
-      <Sidebar />
+      <Sidebar navToggle={navToggle} />
+
+      <div className="ham-burger-menu">
+        <IconButton onClick={() => setNavToggle(!navToggle)}>
+          <MenuIcon />
+        </IconButton>
+      </div>
+
       <MainContentStyled>
         <Switching>
           <Route path="/" exact>
             <HomePage />
           </Route>
-          <Route path="/portfolios" exact>
-            <PortfoliosPage />
+          <Route path="/portfolio" exact>
+            <PortfolioPage />
           </Route>
-          <Route path="/blogs" exact>
-            <BlogsPage />
+          <Route path="/blog" exact>
+            <BlogPage />
           </Route>
           <Route path="/contact" exact>
             <ContactPage />
@@ -32,7 +45,7 @@ function App() {
 
 const MainContentStyled = styled.main`
   position: relative;
-  margin-left: 25rem;
+  margin-left: 16.3rem;
   min-height: 100vh;
   @media screen and (max-width: 1200px) {
     margin-left: 0;
