@@ -17,7 +17,7 @@ This app is built in ReactJS. It's continually being developed.
 
 ## TECHNICAL NOTES
      -react
-     -typescript
      -styled-components
+     -material-ui
 
 ## BROWSER SUPPORT
