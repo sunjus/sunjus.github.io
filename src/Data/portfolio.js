@@ -12,6 +12,7 @@ const portfolio = [
     link2: "https://sunjus.github.io/recipe-app/",
     title: "Recipe app",
     text: "Recipe search and filter Application",
+    skillset: " Javascript, CSS3",
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const portfolio = [
     link2: "https://movie-wonderful.netlify.app/",
     title: "Movie app",
     text: "Movie Search Application",
+    skillset: " React, Styled-components",
   },
 
   {
@@ -31,6 +33,7 @@ const portfolio = [
     link2: "https://dailyvoca.netlify.app/",
     title: "Voca app",
     text: "Voca Application",
+    skillset: " ReactJS, TypeScript, SASS",
   },
 
   {
@@ -41,6 +44,7 @@ const portfolio = [
     link2: "https://sleepy-lake-84219.herokuapp.com/",
     title: "Phonebook app",
     text: "Phonebook Application",
+    skillset: " ReactJS, Styled-components, nodeJS, expressJS, MongoDB ",
   },
 ];
 

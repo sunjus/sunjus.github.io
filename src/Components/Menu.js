@@ -27,6 +27,7 @@ function Menu({ menuItem }) {
               </div>
               <h6>{item.title}</h6>
               <p>{item.text}</p>
+              <p>{item.skillset}</p>
             </div>
           </div>
         );
