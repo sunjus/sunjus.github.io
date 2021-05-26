@@ -20,4 +20,4 @@ This app is built in ReactJS. It's continually being developed.
      -styled-components
      -material-ui
 
-## BROWSER SUPPORT
+
