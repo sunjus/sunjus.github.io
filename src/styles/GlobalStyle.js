@@ -27,7 +27,7 @@ const GlobalStyled = createGlobalStyle`
         font-size: 1.2rem;
         list-style: none;
         text-decoration: none;
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Roboto', sans-serif;
     
     }
 
