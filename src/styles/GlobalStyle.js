@@ -10,11 +10,11 @@ const GlobalStyled = createGlobalStyle`
     --border-color:  bisque;
     --background-light-color: white;
     --background-light-color-2: #79b4b4;
-    --white-color: #151515;
-    --font-light-color: black;
+    --white-color: #06031deb;
+    --font-light-color: #06031deb;
     --font-dark-color: grey;
     --font-dark-color-2: red;
-    --sidebar-dark-color: #79b4b4;
+    --sidebar-dark-color: white;
     --scrollbar-bg-color: #f08c89;
     --scrollbar-thump-color: red;
     --scrollbar-track-color: #79b4b4;
@@ -45,24 +45,24 @@ const GlobalStyled = createGlobalStyle`
     }
 
     h1{
-        font-size: 4rem;
+        font-size: 3rem;
         color: var(--white-color);
         span{
-            font-size: 4rem;
+            font-size: 3rem;
             @media screen and (max-width: 502px){
-                font-size: 3rem
+                font-size: 2rem
             }
         }
         @media screen and (max-width: 502px){
-            font-size: 3rem
+            font-size: 2rem
         }
     }
 
     h2{
-        font-size: 2.1rem;
+        font-size: 2rem;
         color: var(--white-color);
         span{
-            font-size: 2.1rem;
+            font-size: 2rem;
             @media screen and (max-width: 502px){
                 font-size: 1.3rem
             }

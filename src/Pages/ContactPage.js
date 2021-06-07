@@ -18,31 +18,6 @@ function ContactPage() {
       <Title title={"Contact"} span={"Contact"} />
       <ContactPageStyled>
         <InnerLayout className={"contact-section"}>
-          <div className="left-content">
-            <form className="form">
-              <div className="form-field">
-                <label htmlFor="name">Enter your name*</label>
-                <input type="text" id="name" />
-              </div>
-              <div className="form-field">
-                <label htmlFor="email">Enter your email*</label>
-                <input type="email" id="email" />
-              </div>
-
-              <div className="form-field">
-                <label htmlFor="text-area">Enter your Message*</label>
-                <textarea
-                  name="textarea"
-                  id="textarea"
-                  cols="30"
-                  rows="5"
-                ></textarea>
-              </div>
-              <div className="form-field f-button">
-                <PrimaryButton title={"Send Email"} />
-              </div>
-            </form>
-          </div>
           <div className="right-content">
             <ContactItem
               title={"Phone"}

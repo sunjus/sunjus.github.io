@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Sidebar from "./Components/Sidebar";
 import HomePage from "./Pages/HomePage";
 import PortfolioPage from "./Pages/PortfolioPage";
-import BlogPage from "./Pages/BlogPage";
 import ContactPage from "./Pages/ContactPage";
 import { Route, Switch as Switching } from "react-router";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -30,9 +29,6 @@ function App() {
           </Route>
           <Route path="/portfolio" exact>
             <PortfolioPage />
-          </Route>
-          <Route path="/blog" exact>
-            <BlogPage />
           </Route>
           <Route path="/contact" exact>
             <ContactPage />

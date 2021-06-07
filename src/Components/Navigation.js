@@ -24,11 +24,6 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/blog" activeClassName="active-class" exact>
-            Blog
-          </NavLink>
-        </li>
-        <li className="nav-item">
           <NavLink to="/contact" activeClassName="active-class" exact>
             Contact
           </NavLink>

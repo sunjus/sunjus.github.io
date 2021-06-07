@@ -18,7 +18,7 @@ const portfolio = [
     id: 2,
     category: "React",
     image: img2,
-    link1: "https://github.com/sunjus/movie_list_app",
+    link1: "https://github.com/sunjus/movie-app",
     link2: "https://movie-wonderful.netlify.app/",
     title: "Movie app",
     text: "Movie Search Application",
@@ -29,11 +29,11 @@ const portfolio = [
     id: 3,
     category: "React & Typescript",
     image: img1,
-    link1: "https://github.com/sunjus/dictionary",
-    link2: "https://dailyvoca.netlify.app/",
+    link1: "https://github.com/sunjus/daily_voca",
+    link2: "https://daily-voca.herokuapp.com/",
     title: "Voca app",
     text: "Voca Application",
-    skillset: " ReactJS, TypeScript, SASS",
+    skillset: " ReactJS, TypeScript, CSS",
   },
 
   {

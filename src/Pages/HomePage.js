@@ -8,6 +8,8 @@ import node from "../images/nodelogo.png";
 import express from "../images/expresslogo.png";
 import mongodb from "../images/mongodblogo.png";
 import postman from "../images/postmanlogo.png";
+import frontendlogo from "../images/frontendlogo.png";
+import backendlogo from "../images/backendlogo.png";
 
 function HomePage() {
   return (
@@ -31,6 +33,7 @@ function HomePage() {
         <div className="tech">
           <div className="front">
             <h3>Front-end development</h3>
+            <img src={frontendlogo} />
             <p>
               I build interactive and responsive user interface using modern
               web-technologies and tools such as React.js, Typescript and Sass.
@@ -56,25 +59,26 @@ function HomePage() {
           </div>
           <div className="server">
             <h3>Server-side development</h3>
+            <img src={backendlogo} />
             <p>
               I use javascript on the server-side by utilizing its run-time
               node.js. Also, I have experience in interacting with the NoSQL
               database MongoDB.
             </p>
             <div className="techs">
-              <div className="tech-icon">
+              <div className="tech-icon2">
                 <img src={node} />
                 <p>Node.js</p>
               </div>
-              <div className="tech-icon">
+              <div className="tech-icon2">
                 <img src={express} />
                 <p>Express.js</p>
               </div>
-              <div className="tech-icon">
+              <div className="tech-icon2">
                 <img src={mongodb} />
                 <p>MongoDB</p>
               </div>
-              <div className="tech-icon">
+              <div className="tech-icon2">
                 <img src={postman} />
                 <p>Postman</p>
               </div>
@@ -90,19 +94,32 @@ const HomePageStyled = styled.header`
   display: block;
   width: 100%;
   height: 100vh;
-  padding: 5rem;
+  padding: 3rem 5rem;
   text-align: center;
+  .typography {
+    margin: 0;
+    padding: 1rem;
+  }
+  h2,
+  h3 {
+    padding: 1rem;
+  }
   .stack {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
+  }
+  .ltitle {
+    margin-top: 3rem;
+    padding: 0rem;
+    color: grey;
   }
   .tech {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    padding: 3rem;
-    max-width: 105rem;
+    padding: 1rem;
+    max-width: 85rem;
   }
   p {
     padding: 1rem;
@@ -113,7 +130,7 @@ const HomePageStyled = styled.header`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 3rem 2rem;
+    padding: 2rem 1rem 0.5rem;
     max-width: 28rem;
     background-color: #f8f8f8;
     border-radius: 0.5rem;
@@ -122,9 +139,14 @@ const HomePageStyled = styled.header`
   }
   .techs {
     display: flex;
+    max-width: 25rem;
+    justify-content: space-between;
     align-items: center;
     padding: 0.2rem;
     margin: 0.2rem;
+  }
+  .tech-icon {
+    margin-right: 0.8rem;
   }
 `;
 
