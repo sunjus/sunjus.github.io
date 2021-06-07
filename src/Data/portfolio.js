@@ -2,6 +2,7 @@ import img1 from "../images/pic1.png";
 import img2 from "../images/pic2.png";
 import img3 from "../images/pic3.png";
 import img4 from "../images/pic4.png";
+import img5 from "../images/pic5.png";
 
 const portfolio = [
   {
@@ -11,7 +12,6 @@ const portfolio = [
     link1: "https://github.com/sunjus/recipe-app",
     link2: "https://sunjus.github.io/recipe-app/",
     title: "Recipe app",
-    text: "Recipe search and filter Application",
     skillset: " Javascript, CSS3",
   },
   {
@@ -21,7 +21,6 @@ const portfolio = [
     link1: "https://github.com/sunjus/movie-app",
     link2: "https://movie-wonderful.netlify.app/",
     title: "Movie app",
-    text: "Movie Search Application",
     skillset: " React, Styled-components",
   },
 
@@ -32,7 +31,6 @@ const portfolio = [
     link1: "https://github.com/sunjus/daily_voca",
     link2: "https://daily-voca.herokuapp.com/",
     title: "Voca app",
-    text: "Voca Application",
     skillset: " ReactJS, TypeScript, CSS",
   },
 
@@ -43,8 +41,16 @@ const portfolio = [
     link1: "https://github.com/sunjus/fullstackopen-part3",
     link2: "https://sleepy-lake-84219.herokuapp.com/",
     title: "Phonebook app",
-    text: "Phonebook Application",
     skillset: " ReactJS, Styled-components, nodeJS, expressJS, MongoDB ",
+  },
+  {
+    id: 5,
+    category: "MERN",
+    image: img5,
+    link1: "https://github.com/sunjus/social-events-app",
+    link2: "https://fullstack-events-app.herokuapp.com/",
+    title: "Social-event app",
+    skillset: " ReactJS, reactstrap, nodeJS, expressJS, MongoDB ",
   },
 ];
 

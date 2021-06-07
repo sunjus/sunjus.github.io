@@ -54,6 +54,9 @@ const MenuItemStyled = styled.div`
       h6 {
         font-size: 1.5rem;
       }
+      p {
+        font-size: 0.8rem;
+      }
       img {
         width: 100%;
         height: 30vh;
@@ -135,7 +138,6 @@ const MenuItemStyled = styled.div`
           background-color: white;
           opacity: 0.9;
           transform-origin: left;
-
           transition: all 0.4s ease-in-out;
         }
       }

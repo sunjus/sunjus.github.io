@@ -22,7 +22,7 @@ function ContactPage() {
             <ContactItem
               title={"Phone"}
               icon={phone}
-              cont1={"+358 44 954 9885"}
+              cont1={"+358 044 954 9885"}
             />
             <ContactItem
               title={"Email"}
