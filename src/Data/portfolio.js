@@ -3,6 +3,7 @@ import img2 from "../images/pic2.png";
 import img3 from "../images/pic3.png";
 import img4 from "../images/pic4.png";
 import img5 from "../images/pic5.png";
+import img6 from "../images/pic6.png";
 
 const portfolio = [
   {
@@ -51,6 +52,15 @@ const portfolio = [
     link2: "https://fullstack-events-app.herokuapp.com/",
     title: "Social-event app",
     skillset: " ReactJS, reactstrap, nodeJS, expressJS, MongoDB ",
+  },
+  {
+    id: 6,
+    category: "React & Typescript",
+    image: img6,
+    link1: "https://github.com/sunjus/hotel",
+    link2: "https://hotel-carousels.netlify.app/",
+    title: "Hotel Carousels app",
+    skillset: " ReactJS, TypeScript, Sass, Jest",
   },
 ];
 
