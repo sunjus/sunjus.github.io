@@ -1,7 +1,4 @@
 
-
-## My show-room with REACT
-
 ### DESCRIPTION
 My portfolio website's continually being developed.
 
